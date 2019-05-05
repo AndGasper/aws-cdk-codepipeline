@@ -1,2 +1,4 @@
 **node_modules
 **build
+# This probably doesn't need to be here, but meh.
+cdk.context.json

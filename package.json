@@ -4,6 +4,9 @@
   "description": "CodePipeline + CDK",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,18 +15,20 @@
   "author": "Andres Gasper",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^24.0.11",
     "@types/node": "^11.12.1",
     "tslint": "^5.14.0",
-    "typescript": "^3.3.4000"
+    "typescript": "^3.4.5"
   },
   "dependencies": {
+    "@aws-cdk/aws-codecommit": "^0.30.0",
     "@aws-cdk/aws-codedeploy": "^0.30.0",
+    "@aws-cdk/aws-codepipeline": "^0.30.0",
+    "@aws-cdk/aws-codepipeline-actions": "^0.30.0",
     "@aws-cdk/aws-ec2": "^0.29.0",
     "@aws-cdk/aws-ecr": "^0.30.0",
-    "@aws-cdk/aws-ecs": "^0.29.0",
-    "@aws-cdk/aws-s3": "^0.27.0",
-    "@aws-cdk/cdk": "^0.27.0",
-    "aws-cdk": "^0.27.0"
+    "@aws-cdk/aws-ecs": "^0.30.0",
+    "@aws-cdk/aws-iam": "^0.30.0",
+    "@aws-cdk/aws-s3": "^0.30.0",
+    "@aws-cdk/cdk": "^0.30.0"
   }
 }
